@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -19,12 +19,14 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-foreground">Quick Links</h4>
             <div className="flex flex-col space-y-2">
-              {['About', 'Portfolio', 'Tech Stacks', 'Contact'].map((item) => (
+              {["About", "Portfolio", "Tech Stacks", "Contact"].map((item) => (
                 <button
                   key={item}
                   onClick={() => {
-                    const element = document.getElementById(item.toLowerCase().replace(' ', '-'));
-                    element?.scrollIntoView({ behavior: 'smooth' });
+                    const element = document.getElementById(
+                      item.toLowerCase().replace(" ", "-")
+                    );
+                    element?.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="text-left text-muted-foreground hover:text-primary transition-colors"
                 >
@@ -62,7 +64,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground flex items-center justify-center gap-2">
-            Made with <Heart className="w-4 h-4 text-red-500 animate-pulse" /> using React & Tailwind CSS
+            Daniel Rasheed Quillosa * 2025
           </p>
         </div>
       </div>
